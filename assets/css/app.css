@@ -5,6 +5,7 @@
 :root {
   --c-brand: #fac562;
   --c-dark: #333;
+  --c-light: #f8f8f8;
   --c-body: #666;
   --f-base: "Plus Jakarta Sans", sans-serif;
   --nav-height: 100px;
@@ -25,7 +26,8 @@ html {
 body {
   color: var(--c-body);
   font-family: var(--f-base);
-  line-height: 1.2;
+  line-height: 1.8;
+  font-weight: 400;
 }
 
 h1,
@@ -273,4 +275,42 @@ section {
 
 .scroll-to-down .las {
   animation: scrolltodown 2s ease infinite;
+}
+
+/* Section title */
+
+.section-intro {
+  margin-inline-end: 40px;
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+  gap: 44px;
+}
+
+.three-col-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Service */
+#services .grid {
+  gap: 0;
+}
+.service:nth-child(odd) {
+  background-color: var(--c-light);
+}
+
+.service {
+  padding: 44px;
+}
+
+.service p {
+  font-size: 14px;
+}
+
+.service .icon {
+  font-size: 38px;
+  color: var(--c-brand);
 }
