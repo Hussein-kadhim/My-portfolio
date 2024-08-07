@@ -321,6 +321,10 @@ section {
 
 /* Project */
 
+#work {
+  padding: 140px 0;
+}
+
 .project {
   position: relative;
   overflow: hidden;
