@@ -383,3 +383,35 @@ section {
 .blog-post h3 {
   margin-block-start: 16px;
 }
+
+/* Contact */
+
+#contact .grid {
+  grid-template-columns: 1fr 2.5fr;
+}
+
+form {
+  width: 100%;
+}
+
+.contact-widget {
+  margin-inline-end: 44px;
+}
+
+.form-group {
+  margin-block-end: 24px;
+}
+
+.form-group .form-input {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 0;
+  border: 0;
+  font-family: var(--f-base);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-group .form-input:focus {
+  outline: none;
+}
