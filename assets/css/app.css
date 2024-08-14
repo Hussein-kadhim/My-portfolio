@@ -415,3 +415,28 @@ form {
 .form-group .form-input:focus {
   outline: none;
 }
+
+/* Footer */
+footer {
+  padding: 50px 0;
+  background-color: var(--c-dark);
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer p,
+footer a {
+  color: white;
+}
+
+footer .social-icons {
+  font-size: 24px;
+}
+
+footer .social-icons a:not(:last-child) {
+  margin-inline-end: 24px;
+}
