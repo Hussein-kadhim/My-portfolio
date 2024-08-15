@@ -43,8 +43,8 @@ h6 {
 }
 
 .heading-xl {
-  font-size: clamp(44px, 10vh, 100px);
-  text-transform: uppercase;
+  font-size: clamp(44px, 10vw, 100px);
+  text-transform: capitalize;
 }
 
 .heading-1 {
@@ -198,18 +198,17 @@ section {
 @media (max-width: 768px) {
   .nav-links {
     position: fixed;
-    top: var(--nav-height);
+    top: var(--n-height);
     left: 0;
     width: 100%;
     flex-direction: column;
     padding: 0 24px;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
     height: 0;
     overflow: hidden;
     background-color: white;
     justify-content: center;
   }
-
   .nav-links.active {
     height: 30vh;
   }
@@ -298,6 +297,19 @@ section {
   grid-template-columns: repeat(3, 1fr);
 }
 
+@media (max-width: 768px) {
+  .grid {
+    gap: 24px;
+  }
+
+  .two-col-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .three-col-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 /* Service */
 #services .grid {
   gap: 0;
@@ -388,6 +400,12 @@ section {
 
 #contact .grid {
   grid-template-columns: 1fr 2.5fr;
+}
+
+@media (max-width: 768px) {
+  #contact .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 form {
