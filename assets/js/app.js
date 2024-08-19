@@ -25,3 +25,7 @@ navLinksLi.forEach((li) =>
     navLinks.classList.remove("active");
   })
 );
+
+// AOS
+
+AOS.init();
